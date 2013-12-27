@@ -76,7 +76,7 @@ public class Mobilfunktarief1   {
 		float parameter_preis_pro_sms;			//Eingabe im Compilierten Programm mit Komma !
 		float parameter_grundgebuehr;			//Eingabe im Compilierten Programm mit Komma !
 		
-		int parameter_frage;					/* Zusätzliche Parameter ? (1=JA/0=NEIN) */
+		int parameter_frage;					/* Zusï¿½tzliche Parameter ? (1=JA/0=NEIN) */
 		
 		
 		
@@ -144,7 +144,7 @@ public class Mobilfunktarief1   {
 				//Ergebniss Mobitel
 				
 				System.out.println("");
-				System.out.println("--Die monatlichen Kosten für den Anbieter Mobitel sind:" + (8.99+ergebniss_minuten_mobitel+ergebniss_sms_mobitel) + "Euro pro Monat--");
+				System.out.println("--Die monatlichen Kosten fï¿½r den Anbieter Mobitel sind:" + (8.99+ergebniss_minuten_mobitel+ergebniss_sms_mobitel) + "Euro pro Monat--");
 				gesamt_mobitel = (8.99+ergebniss_minuten_mobitel+ergebniss_sms_mobitel);
 				
 				
@@ -187,7 +187,7 @@ public class Mobilfunktarief1   {
 					//Ergebniss Toptel
 				
 					System.out.println("");
-					System.out.println("--Die monatlichen Kosten für den Anbieter Toptel sind:" + (14.99+ergebniss_minuten_toptel+ergebniss_sms_toptel) + "Euro pro Monat--");
+					System.out.println("--Die monatlichen Kosten fï¿½r den Anbieter Toptel sind:" + (14.99+ergebniss_minuten_toptel+ergebniss_sms_toptel) + "Euro pro Monat--");
 					gesamt_toptel = (14.99+ergebniss_minuten_toptel+ergebniss_sms_toptel);
 				
 				
@@ -230,7 +230,7 @@ public class Mobilfunktarief1   {
 						//Ergebniss Tricatel
 				
 						System.out.println("");
-						System.out.println("--Die monatlichen Kosten für den Anbieter Tricatel sind:" + (19.99+ergebniss_minuten_tricatel+ergebniss_sms_tricatel) + "Euro pro Monat--");
+						System.out.println("--Die monatlichen Kosten fï¿½r den Anbieter Tricatel sind:" + (19.99+ergebniss_minuten_tricatel+ergebniss_sms_tricatel) + "Euro pro Monat--");
 						gesamt_tricatel = (19.99+ergebniss_minuten_tricatel+ergebniss_sms_tricatel);
 	
 						
@@ -281,16 +281,17 @@ public class Mobilfunktarief1   {
 							//Ergebniss Fonmax
 							
 							System.out.println("");
-							System.out.println("--Die monatlichen Kosten für den Anbieter Fonmax sind:" + (5.99+ ergebniss_minuten_pro_monat_fonmax + ergebniss_sms_pro_monat_fonmax) + "Euro pro Monat--");
+							
 							gesamt_fonmax = (5.99+ ergebniss_minuten_pro_monat_fonmax + ergebniss_sms_pro_monat_fonmax);
-						
+							gesamt_fonmax = Math.round(gesamt_fonmax);
+							System.out.println("--Die monatlichen Kosten fï¿½r den Anbieter Fonmax sind:" +  gesamt_fonmax + Euro Pro pro Monat--");
 						
 						
 						//Prameter
 						
 						System.out.println("");	
 						System.out.println("");
-						System.out.println("Wollen sie noch einen weiteren anbieter hinzufügen? (Ja=1/Nein=0)");
+						System.out.println("Wollen sie noch einen weiteren anbieter hinzufï¿½gen? (Ja=1/Nein=0)");
 						parameter_frage = eingabe.nextInt();
 						
 							if(parameter_frage == 1)
@@ -312,7 +313,7 @@ public class Mobilfunktarief1   {
 								parameter_preis_pro_sms = eingabe.nextFloat();																		//Eingabe im Compilierten Programm mit Komma !
 								System.out.println("");
 								
-								System.out.println("geben sie bitte die monatliche grundgebühr ein(Bitte Komma anstadt Punkt, sonst Fehler):");
+								System.out.println("geben sie bitte die monatliche grundgebï¿½hr ein(Bitte Komma anstadt Punkt, sonst Fehler):");
 								parameter_grundgebuehr = eingabe.nextFloat();																		//Eingabe im Compilierten Programm mit Komma !
 								System.out.println("");
 								
@@ -353,7 +354,7 @@ public class Mobilfunktarief1   {
 								//Ergebniss Parameter
 						
 								System.out.println("");
-								System.out.println("--Die monatlichen Kosten für ihren Anbieter sind:" + (parameter_grundgebuehr+ergebniss_minuten_parameter+ergebniss_sms_parameter) + "Euro pro Monat--");
+								System.out.println("--Die monatlichen Kosten fï¿½r ihren Anbieter sind:" + (parameter_grundgebuehr+ergebniss_minuten_parameter+ergebniss_sms_parameter) + "Euro pro Monat--");
 								gesamt_parameter = (parameter_grundgebuehr+ergebniss_minuten_parameter+ergebniss_sms_parameter);
 							
 							
@@ -364,7 +365,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarief ist: Mobitel.----");
+									System.out.println("----Ihr gï¿½nstigster Tarief ist: Mobitel.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -373,7 +374,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarif ist: Toptel.----");
+									System.out.println("----Ihr gï¿½nstigster Tarif ist: Toptel.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -382,7 +383,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarif ist: Tricatel.----");
+									System.out.println("----Ihr gï¿½nstigster Tarif ist: Tricatel.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -391,7 +392,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarif ist: Fonmax.----");
+									System.out.println("----Ihr gï¿½nstigster Tarif ist: Fonmax.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -400,7 +401,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarif ist: Ihr zusätzlich eingegebener Tarief.----");
+									System.out.println("----Ihr gï¿½nstigster Tarif ist: Ihr zusï¿½tzlich eingegebener Tarief.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -415,7 +416,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarief ist: Mobitel.----");
+									System.out.println("----Ihr gï¿½nstigster Tarief ist: Mobitel.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -424,7 +425,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarif ist: Toptel.----");
+									System.out.println("----Ihr gï¿½nstigster Tarif ist: Toptel.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -433,7 +434,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarif ist: Tricatel.----");
+									System.out.println("----Ihr gï¿½nstigster Tarif ist: Tricatel.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
@@ -442,7 +443,7 @@ public class Mobilfunktarief1   {
 									System.out.println("");
 									System.out.println("");
 									System.out.println("");
-									System.out.println("----Ihr günstigster Tarif ist: Fonmax.----");
+									System.out.println("----Ihr gï¿½nstigster Tarif ist: Fonmax.----");
 									System.out.println("");
 									System.out.println("Jetzt Beginnt das Programm von vorne !");
 								}
